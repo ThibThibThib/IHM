@@ -7,29 +7,29 @@ var age2023 = function(){
 	var longueur = nomjs.length;
 
     if (longueur === 0) {
-        nomjs = "<div class='RED'>Nom inconnu</div>";
-		document.getElementById("inconnunom").innerHTML = "Vous n'avez saisie aucun nom";
+        nomjs = "<div class='RED'><B>NOM INCONNUE</B></div>";
+		document.getElementById("inconnunom").innerHTML = "<I>Vous n'avez saisie aucun nom</I>";
 
     }
 
 	if (1900 <= year && year <= 2024) {
 		var age = 2024 - year;
-		document.getElementById("zoneAge").innerHTML = nomjs + " , vous aurez " + age + " ans en <B>2024</B>.";
+		document.getElementById("zoneAge").innerHTML = nomjs + ", vous aurez " + age + " ans en <B>2024</B>.";
 	} 
 	else 
 		if (year < 1900) {
 			year = 1900;
 			yearInput.value = year;
-			document.getElementById("zoneAge").innerHTML = "<div class='RED'><B>AGE INCORRECT</B></div> Vous avez saisi un nombre inférieur à <B>1900</B>.";
-			document.getElementById("zoneAge2").innerHTML ="Veuillez saisir une année comprise entre <B>1900</B> et <B>2024</B>";
+			document.getElementById("zoneAge").innerHTML = "<div class='RED'><B>AGE INCORRECT</B></div> <I>Vous avez saisi un nombre inférieur à <B>1900</B></I>.";
+			document.getElementById("zoneAge2").innerHTML ="<I>Veuillez saisir une année comprise entre <B>1900</B> et <B>2024</B></I>";
 
 		} 
 		else 
 			if (year > 2024) {
 				year = 2024;
 				yearInput.value = year;
-				document.getElementById("zoneAge").innerHTML ="<div class='RED'><B>AGE INCORRECT</B></div> Vous avez saisi un nombre supérieur à <B>2024<B/>.";
-				document.getElementById("zoneAge2").innerHTML ="Veuillez saisir une année comprise entre <B>1900</B> et <B>2024</B>";
+				document.getElementById("zoneAge").innerHTML ="<div class='RED'><B>AGE INCORRECT</B></div> <I>Vous avez saisi un nombre supérieur à <B>2024<B/></I>.";
+				document.getElementById("zoneAge2").innerHTML ="</I>Veuillez saisir une année comprise entre <B>1900</B> et <B>2024</B></I>";
 
 	}
 }
