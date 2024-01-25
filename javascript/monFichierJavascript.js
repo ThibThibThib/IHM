@@ -6,6 +6,10 @@ var age2023 = function(){
     var year = parseInt(yearInput.value);
 	var longueur = nomjs.length;
 
+	document.getElementById("zoneAge").innerHTML = ""
+	document.getElementById("zoneAge2").innerHTML =""
+	document.getElementById("inconnunom").innerHTML = ""
+
     if (longueur === 0) {
         nomjs = "<div class='RED'><B>NOM INCONNUE</B></div>";
 		document.getElementById("inconnunom").innerHTML = "<I>Vous n'avez saisie aucun nom</I>";
@@ -14,7 +18,7 @@ var age2023 = function(){
 
 	if (1900 <= year && year <= 2024) {
 		var age = 2024 - year;
-		document.getElementById("zoneAge").innerHTML = nomjs + ", vous aurez " + age + " ans en <B>2024</B>.";
+		document.getElementById("zoneAge").innerHTML = nomjs + ", Vous aurez " + age + " ans en <B>2024</B>.";
 	} 
 	else 
 		if (year < 1900) {
