@@ -1,0 +1,21 @@
+body{
+	background-color:#231234;
+	color:#ffffff;
+	text-align:center
+}
+
+h1{color:#ddaadd}
+
+h2{color:#00aadd}
+
+
+p{
+	color:#bbaadd
+}
+
+li{color:#bbaadd;
+	text-align:left}
+
+.RED{
+	color: red;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html> <!-- début de la page html-->
+
+	<head><!-- début de l'entête : informations pour que le navigateur affiche convenablement la page-->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /><!--indique au navigateur le type de codage de caratères à utiliser  -->
+		<title> IHM </title><!--titre de l'onglet-->
+		<link href="CSS/monFichierCSS.css" type="text/css" rel="stylesheet" media="screen"><!-- permet d'associer à cette page la feuille de style CSS -->
+		<SCRIPT  type="text/javascript" SRC="javascript/monFichierJavascript.js"> </SCRIPT><!-- permet d'associer à cette page un programme écrit en javascript -->
+	</head><!-- fin de l'entête -->
+	
+	
+	
+
+	<body><!-- début du corps de la page -->
+		<h1> Inter action Homme-Machine</h1>
+		
+		<h2> Introduction</h2>
+			<p onmouseover="style.backgroundColor = '#ffff00'">Une Interaction Homme Machine permet à un utilisateur d'interagir avec un ordinateur, une tablette, un smartphone. <br>
+			La souris et le clavier, l'écran tactile permettent desIHM. <br>Nous allons étudier ici les IMH sur une page WEB codée en HTML, nous aborderons le CSS et le JavaScript qui permettent de créer une grande richesse d'IHM.</p>
+			
+			<br>
+		
+		<h2> Voici un petit formulaire à compléter</h2>
+			<form>
+				<p> Quels sont vos nom et prénom ?</p>
+				<input type=text id=nom></input>
+				<p> Quelle est votre année de naissance ?</p>
+				<input type=number value="2000" min="1900" max="2024"id=naiss></input><br>
+				<input type=button id=bouton0 value="Voulez vous connaitre votre âge en 2024?" onclick=age2023()></input>
+				<div id=zoneAge></div>
+				<div id=zoneAge2></div>
+				<div id="inconnunom"></div>
+			</form>
+			<br>
+			<form >Sur un octet, combien d'entiers naturels différents peut-on coder ?<br>
+					  <input name="bt" onclick="alert('Réponse fausse.')" type="radio">64<br>
+					  <input name="bt" onclick="alert('Faux.')" type="radio">128<br>
+					  <input name="bt" onclick="alert('Réponse fausse .')" type="radio">255<br>
+					  <input name="bt" onclick="alert('Réponse exacte, de 00000000  à 11111111 c\'est à dire de 0 à 255 il y a 256 possibilités decodage.')" type="radio">256<br>
+			</form>
+			<br>
+	
+		<h2> Autre exemple </h2>		
+			<p>Bouton qui permettra d'exécuter un autre sous programme en js</p>
+			<input type=button id=bouton1 value="Que fait ce bouton ?" onclick=sousProg()></input><!-- création d'un bouton qui permettra d'exécuter le programme -->
+			<div id="monTexte"> </div>
+		
+		<h2 onmouseover="alert('Il faut être curieux ! Mais comment cliquer sur les liens hypertextes du bas de page?');"> Pour aller plus loin </h2>
+			<ul>
+				<li><a href="https://www.numelion.com/code-html-balises-texte.html"> Les principales balises HTML</a></li>
+				<li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"> Un site incontournable sur l' HTML5 et le CSS3</a></li>
+				<li><a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Variables" > Un site incontournable sur le js </a></li>
+			</ul>	
+	</body><!-- fin du corps de la page -->
+
+</html><!-- fin de la page html-->
